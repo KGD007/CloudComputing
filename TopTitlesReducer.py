@@ -9,6 +9,6 @@ for line in sys.stdin:
 
 topTitle = sorted(topTitle.items(), key= lambda x : -x[1])
 for i, j in topTitle[:10][::-1]:
-    print(i+ "  " + str(j))
+    print(i+ '\t' + str(j))
 
     # print('%s\t%s' % (  ,  )) print as final output
