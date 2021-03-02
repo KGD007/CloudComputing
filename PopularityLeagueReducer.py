@@ -21,5 +21,5 @@ for i in range(1, len(links)):
         output.append((links[i][0], i))
 output = [(int(i), int(j)) for i , j in output]
 output = sorted(output, key = lambda x: x[0])
-for i, j in output:
+for i, j in output[::-1]:
     print(str(i) + '\t' + str(j))
