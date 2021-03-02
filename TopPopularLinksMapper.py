@@ -2,14 +2,16 @@
 import sys
 
 
-# TODO
-
-
+links = {}
 
 for line in sys.stdin:
+       dictionary = eval(line)
+       for key, value in dictionary.items():
+              if key not in links:
+                     links[key] = int(value)
+              else:
+                     links[key] += int(value)
 
-       #TODO
 
-
-#TODO
+print(links)
 # print('%s\t%s' % (  ,  )) pass this output to reducer

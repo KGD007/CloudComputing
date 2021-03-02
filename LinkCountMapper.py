@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 import sys
-
-
+output = ""
 for line in sys.stdin:
-  #TODO
-
-  # print('%s\t%s' % (  ,  )) pass this output to reducer
+  key , values = line.split(':')[0], line.split(':')[1]
+  for value in values:
+    output += key + ':'
+print(output)

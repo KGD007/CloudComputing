@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
 import sys
 
-#TODO
-
+links = {}
 # input comes from STDIN
 for line in sys.stdin:
-    # TODO
+    values = line.strip().split(':')
+    for value in values:
+        if value.strip() in links.keys():
+            links[value.strip()] += 1
+        else:
+            links[value.strip()] = 1
 
-# TODO
+print(links)
 # print('%s\t%s' % (  ,  )) print as final output
