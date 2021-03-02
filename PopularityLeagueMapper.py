@@ -9,7 +9,7 @@ test = []
 with open(leaguePath) as f:
        words = f.readlines()
        for word in words:
-              test.append(word.strip().lower())
+              test.append(word.strip())
 
 
 for line in sys.stdin:
@@ -22,7 +22,7 @@ for line in sys.stdin:
 
 output = {}
 for key in test:
-      if key in links:
+       if key in links:
               output[key] = links[key]
        else:
               output[key] = 0
