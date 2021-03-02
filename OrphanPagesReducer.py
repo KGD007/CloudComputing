@@ -14,6 +14,6 @@ for key in from_link.keys():
   if key not in to_link.keys():
     output.append(int(key))
 output = sorted(output)
-for i in output[:10]:
+for i in output:
   print(i)
 # print(xx) print as final output
